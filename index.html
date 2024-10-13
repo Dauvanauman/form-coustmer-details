@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Customer Details Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Hotel Customer Details</h2>
+      <div class="navbar-container">
+        <div class="navbar">
+          <a href="#">Home</a>
+          <a href="index.html">Enter coustmer Details</a>
+          <a href="display.html">Show coustmer Details</a>
+        </div>
+      </div>
+      <form id="customerForm">
+        <!-- Name Field -->
+        <div class="row-container1">
+          <div class="first-two-field">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="row-container2">
+          <div class="second-two-field">
+            <!-- Phone Number Field -->
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <!-- Check-in Date -->
+            <div class="form-group">
+              <label for="checkin">Check-In Date:</label>
+              <input type="date" id="checkin" name="checkin" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="third-two-field">
+          <!-- Check-out Date -->
+          <div class="form-group">
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+
+          <!-- Room Type -->
+          <div class="form-group">
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+              <option value="single">Royal AC Room</option>
+              <option value="double">Standard AC Room</option>
+              <option value="suite">Economic Room</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row-container2">
+          <div class="fourth-two-field">
+            <!-- City Field -->
+            <div class="form-group">
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" required />
+            </div>
+
+            <!-- Document Number -->
+            <div class="form-group">
+              <label for="document-number">Document Number:</label>
+              <input
+                type="text"
+                id="document-number"
+                name="document-number"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row-container2">
+          <div class="fifth-two-field">
+            <!-- Arrive From Field -->
+            <div class="form-group">
+              <label for="arrive-from">Arrive From:</label>
+              <input type="text" id="arrive-from" name="arrive-from" required />
+            </div>
+
+            <!-- Going To Field -->
+            <div class="form-group">
+              <label for="going-to">Going To:</label>
+              <input type="text" id="going-to" name="going-to" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="row-container2">
+          <div class="sixth-two-field">
+            <!-- Document Type Field (Now accepting text) -->
+            <div class="form-group">
+              <label for="document-type">Document Type:</label>
+              <input
+                type="text"
+                id="document-type"
+                name="document-type"
+                required
+              />
+            </div>
+
+            <!-- Number Of Persons Field -->
+            <div class="form-group">
+              <label for="number-of-persons">Number Of Persons:</label>
+              <input
+                type="number"
+                id="number-of-persons"
+                name="number-of-persons"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row-container2">
+          <div class="seventh-two-field">
+            <div class="form-group">
+              <label for="room-number">Room Number:</label>
+              <input type="text" id="room-number" name="room-number" required />
+            </div>
+
+            <div class="form-group">
+              <label for="document">Upload Document:</label>
+              <input
+                type="file"
+                id="document"
+                name="document"
+                accept=".pdf, .doc, .docx, .txt"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Requests -->
+        <div class="form-group">
+          <label for="requests">Additional Requests:</label>
+          <textarea
+            id="requests"
+            name="requests"
+            rows="4"
+            placeholder="Enter any additional requests..."
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
